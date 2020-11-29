@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name ncnotify-core)(type KiCad)(uri ${KIPRJMOD}/ncnotify-core.pretty)(options "")(descr ""))
+  (lib (name libs)(type KiCad)(uri ${KIPRJMOD}/libs)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type KiCad)(uri ${KIPRJMOD}/libs/SamacSys_Parts.pretty)(options "")(descr ""))
+)
