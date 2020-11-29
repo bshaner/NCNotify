@@ -311,17 +311,6 @@ Wire Wire Line
 	1850 5400 2000 5400
 Wire Wire Line
 	2000 5400 2000 5250
-$Comp
-L nc-core-collection:ZMSL03130T10LLC S1
-U 1 1 5FAD4FED
-P 4000 5000
-F 0 "S1" V 3585 4604 50  0000 C CNN
-F 1 "ZMSL03130T10LLC" V 3676 4604 50  0000 C CNN
-F 2 "ncnotify-core:ZMSL03130T10LLC" H 4000 5000 50  0001 C CNN
-F 3 "" H 4000 5000 50  0001 C CNN
-	1    4000 5000
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2000 5400 3200 5400
 Connection ~ 2000 5400
@@ -339,25 +328,9 @@ Wire Notes Line
 Text Notes 700  3900 0    50   ~ 0
 Power (USB/Batt)
 Wire Wire Line
-	2000 4350 3000 4350
-Wire Wire Line
-	3550 5150 3200 5150
-Wire Wire Line
-	3200 5150 3200 5400
-Wire Wire Line
-	3000 5000 3000 4350
-Wire Wire Line
-	3000 5000 3550 5000
-Connection ~ 3000 4350
-Wire Wire Line
-	3000 4350 3350 4350
-Wire Wire Line
 	2000 4850 3150 4850
 Wire Wire Line
 	3150 4750 3150 4850
-Connection ~ 3150 4850
-Wire Wire Line
-	3150 4850 3550 4850
 $Comp
 L Device:R_US R1
 U 1 1 5FAF04C4
@@ -573,7 +546,7 @@ U 1 1 5FB2A1CF
 P 4700 6900
 F 0 "J4" V 4260 6946 50  0000 R CNN
 F 1 "Conn_ARM_JTAG_SWD_10" V 4159 7352 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 4700 6900 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 4700 6900 50  0001 C CNN
 F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 4350 5650 50  0001 C CNN
 	1    4700 6900
 	1    0    0    -1  
@@ -750,8 +723,6 @@ Wire Wire Line
 Wire Wire Line
 	10650 4600 10650 4700
 Connection ~ 10650 4700
-Wire Wire Line
-	8550 5200 8550 4950
 Text GLabel 8550 2600 0    50   Input ~ 0
 SENSE_IN
 Text GLabel 8550 3100 0    50   Input ~ 0
@@ -1043,18 +1014,6 @@ Wire Notes Line
 	7750 650  7750 2350
 Wire Notes Line
 	5100 2350 5100 650 
-$Comp
-L Device:R_US R9
-U 1 1 5FB99AFF
-P 8550 5350
-F 0 "R9" H 8618 5396 50  0000 L CNN
-F 1 "51k" H 8618 5305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 8590 5340 50  0001 C CNN
-F 3 "~" H 8550 5350 50  0001 C CNN
-	1    8550 5350
-	1    0    0    -1  
-$EndComp
-Connection ~ 8300 5500
 Wire Wire Line
 	8550 5500 8300 5500
 Wire Wire Line
@@ -1082,17 +1041,6 @@ F 3 "" H 8300 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:Jumper_2_Open JP4
-U 1 1 5FB7B1BB
-P 8300 5300
-F 0 "JP4" H 8300 5535 50  0000 C CNN
-F 1 "Jumper_2_Open" H 8300 5444 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8300 5300 50  0001 C CNN
-F 3 "~" H 8300 5300 50  0001 C CNN
-	1    8300 5300
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R_US R10
 U 1 1 5FB7994A
 P 8300 5750
@@ -1115,54 +1063,6 @@ Text GLabel 10550 4250 2    50   Input ~ 0
 SPI2_MOSI
 Text GLabel 10550 3950 2    50   Input ~ 0
 SPI2_SS_0
-$Comp
-L dk_Rectangular-Connectors-Headers-Male-Pins:67996-412HLF J2
-U 1 1 5FBDB51C
-P 5700 4900
-F 0 "J2" V 5753 4522 60  0000 R CNN
-F 1 "67996-412HLF" V 5647 4522 60  0000 R CNN
-F 2 "digikey-footprints:PinHeader_6x2_P2.54mm_Vertical" H 5900 5100 60  0001 L CNN
-F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/67996.pdf" H 5900 5200 60  0001 L CNN
-F 4 "609-3219-ND" H 5900 5300 60  0001 L CNN "Digi-Key_PN"
-F 5 "67996-412HLF" H 5900 5400 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 5900 5500 60  0001 L CNN "Category"
-F 7 "Rectangular Connectors - Headers, Male Pins" H 5900 5600 60  0001 L CNN "Family"
-F 8 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/67996.pdf" H 5900 5700 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/amphenol-icc-fci/67996-412HLF/609-3219-ND/1878508" H 5900 5800 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN HEADER VERT 12POS 2.54MM" H 5900 5900 60  0001 L CNN "Description"
-F 11 "Amphenol ICC (FCI)" H 5900 6000 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5900 6100 60  0001 L CNN "Status"
-	1    5700 4900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5500 5100 5500 4700
-Wire Wire Line
-	5600 5100 5600 4700
-$Comp
-L power:GND #PWR020
-U 1 1 5FC160C9
-P 5600 5100
-F 0 "#PWR020" H 5600 4850 50  0001 C CNN
-F 1 "GND" H 5605 4927 50  0000 C CNN
-F 2 "" H 5600 5100 50  0001 C CNN
-F 3 "" H 5600 5100 50  0001 C CNN
-	1    5600 5100
-	1    0    0    -1  
-$EndComp
-Connection ~ 5600 5100
-$Comp
-L power:VDD #PWR016
-U 1 1 5FC19D45
-P 5500 4700
-F 0 "#PWR016" H 5500 4550 50  0001 C CNN
-F 1 "VDD" H 5515 4873 50  0000 C CNN
-F 2 "" H 5500 4700 50  0001 C CNN
-F 3 "" H 5500 4700 50  0001 C CNN
-	1    5500 4700
-	1    0    0    -1  
-$EndComp
-Connection ~ 5500 4700
 Text GLabel 5800 5100 3    50   Input ~ 0
 I2C1_SCL
 Text GLabel 5700 5100 3    50   Input ~ 0
@@ -1245,9 +1145,9 @@ Wire Wire Line
 	2750 6700 3150 6700
 Wire Wire Line
 	900  7500 3150 7500
-Text GLabel 4850 3050 0    50   Input ~ 0
-D+
 Text GLabel 4850 3350 0    50   Input ~ 0
+D+
+Text GLabel 4850 3050 0    50   Input ~ 0
 D-
 $Comp
 L power:GND #PWR014
@@ -1412,58 +1312,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 1700 3650 1700
 Connection ~ 3650 1700
-$Comp
-L Device:R_US R11
-U 1 1 5FB708BB
-P 9750 5850
-F 0 "R11" H 9818 5896 50  0000 L CNN
-F 1 "5k1" H 9818 5805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 9790 5840 50  0001 C CNN
-F 3 "~" H 9750 5850 50  0001 C CNN
-	1    9750 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R12
-U 1 1 5FB70F30
-P 10150 5850
-F 0 "R12" H 10218 5896 50  0000 L CNN
-F 1 "5k1" H 10218 5805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10190 5840 50  0001 C CNN
-F 3 "~" H 10150 5850 50  0001 C CNN
-	1    10150 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9750 5700 9750 5600
-Wire Wire Line
-	9750 5600 9950 5600
-Wire Wire Line
-	10150 5600 10150 5700
-Wire Wire Line
-	9950 5600 9950 5500
-Connection ~ 9950 5600
-Wire Wire Line
-	9950 5600 10150 5600
-$Comp
-L power:VDD #PWR024
-U 1 1 5FB7A979
-P 9950 5500
-F 0 "#PWR024" H 9950 5350 50  0001 C CNN
-F 1 "VDD" H 9965 5673 50  0000 C CNN
-F 2 "" H 9950 5500 50  0001 C CNN
-F 3 "" H 9950 5500 50  0001 C CNN
-	1    9950 5500
-	1    0    0    -1  
-$EndComp
-Text GLabel 10150 6150 2    50   Input ~ 0
-I2C1_SCL
-Text GLabel 9750 6150 0    50   Input ~ 0
-I2C1_SDA
-Wire Wire Line
-	9750 6000 9750 6150
-Wire Wire Line
-	10150 6150 10150 6000
 Wire Wire Line
 	1500 4750 1500 4800
 Wire Wire Line
@@ -1489,4 +1337,31 @@ Wire Notes Line
 	5100 2350 7750 2350
 Wire Notes Line
 	7750 650  5100 650 
+Wire Wire Line
+	2000 4350 3350 4350
+NoConn ~ 5700 4700
+NoConn ~ 5800 4700
+NoConn ~ 5900 4700
+NoConn ~ 6000 4700
+NoConn ~ 5800 5100
+NoConn ~ 5700 5100
+Wire Wire Line
+	8300 5100 8300 5150
+Wire Wire Line
+	8300 5450 8300 5500
+Connection ~ 8300 5500
+Wire Wire Line
+	8550 4950 8550 5500
+$Comp
+L Device:R_US R9
+U 1 1 5FB99AFF
+P 8300 5300
+F 0 "R9" H 8368 5346 50  0000 L CNN
+F 1 "51k" H 8368 5255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8340 5290 50  0001 C CNN
+F 3 "~" H 8300 5300 50  0001 C CNN
+F 4 "DNF" H 8300 5300 50  0000 C CNN "DNF"
+	1    8300 5300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
