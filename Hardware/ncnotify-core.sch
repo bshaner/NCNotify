@@ -137,9 +137,9 @@ F 7 "Manufacturer Recommendations" H 2050 6700 50  0001 L BNN "STANDARD"
 	1    0    0    -1  
 $EndComp
 Text GLabel 900  7150 0    50   Input ~ 0
-D+
+CONN_D+
 Text GLabel 1050 7150 2    50   Input ~ 0
-D-
+CONN_D-
 Wire Wire Line
 	1350 6800 1050 6800
 Wire Wire Line
@@ -540,34 +540,21 @@ Wire Notes Line
 	650  3750 650  2200
 Wire Notes Line
 	650  650  2550 650 
-$Comp
-L Connector:Conn_ARM_JTAG_SWD_10 J4
-U 1 1 5FB2A1CF
-P 4700 6900
-F 0 "J4" V 4260 6946 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_10" V 4159 7352 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 4700 6900 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 4350 5650 50  0001 C CNN
-	1    4700 6900
-	1    0    0    -1  
-$EndComp
-Text GLabel 5200 6900 2    50   Input ~ 0
+Text GLabel 5100 6900 2    50   Input ~ 0
 JTMS-SWDIO
 Text GLabel 10550 3050 2    50   Input ~ 0
 JTMS-SWDIO
 Text GLabel 10550 3150 2    50   Input ~ 0
 JTCK-SWCLK
-Text GLabel 5200 6800 2    50   Input ~ 0
+Text GLabel 5100 6800 2    50   Input ~ 0
 JTCK-SWCLK
-Text GLabel 5200 7100 2    50   Input ~ 0
-JTDI
 Text GLabel 10550 3250 2    50   Input ~ 0
 JTDI
-Text GLabel 5200 7000 2    50   Input ~ 0
+Text GLabel 5100 7000 2    50   Input ~ 0
 JTDO
 Text GLabel 8550 3850 0    50   Input ~ 0
 JTDO
-Text GLabel 5450 6500 2    50   Input ~ 0
+Text GLabel 6400 6600 2    50   Input ~ 0
 NRST
 Text GLabel 8550 2350 0    50   Input ~ 0
 NRST
@@ -622,42 +609,31 @@ Connection ~ 5800 7200
 $Comp
 L power:VDD #PWR026
 U 1 1 5FB3E2D3
-P 4700 6300
-F 0 "#PWR026" H 4700 6150 50  0001 C CNN
-F 1 "VDD" H 4715 6473 50  0000 C CNN
-F 2 "" H 4700 6300 50  0001 C CNN
-F 3 "" H 4700 6300 50  0001 C CNN
-	1    4700 6300
+P 4000 6800
+F 0 "#PWR026" H 4000 6650 50  0001 C CNN
+F 1 "VDD" H 4015 6973 50  0000 C CNN
+F 2 "" H 4000 6800 50  0001 C CNN
+F 3 "" H 4000 6800 50  0001 C CNN
+	1    4000 6800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR031
 U 1 1 5FB3FA87
-P 4700 7500
-F 0 "#PWR031" H 4700 7250 50  0001 C CNN
-F 1 "GND" H 4705 7327 50  0000 C CNN
-F 2 "" H 4700 7500 50  0001 C CNN
-F 3 "" H 4700 7500 50  0001 C CNN
-	1    4700 7500
+P 4000 7100
+F 0 "#PWR031" H 4000 6850 50  0001 C CNN
+F 1 "GND" H 4005 6927 50  0000 C CNN
+F 2 "" H 4000 7100 50  0001 C CNN
+F 3 "" H 4000 7100 50  0001 C CNN
+	1    4000 7100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 7500 4700 7500
-Connection ~ 4700 7500
+	4000 7100 4100 7100
 Wire Notes Line
 	3850 7750 3850 6050
 Text Notes 5150 600  0    50   ~ 0
 Decoupling
-Connection ~ 5800 6600
-Wire Wire Line
-	5200 6600 5350 6600
-Wire Wire Line
-	5450 6500 5350 6500
-Wire Wire Line
-	5350 6500 5350 6600
-Connection ~ 5350 6600
-Wire Wire Line
-	5350 6600 5800 6600
 $Comp
 L power:GND #PWR019
 U 1 1 5FB93A40
@@ -1015,9 +991,7 @@ Wire Notes Line
 Wire Notes Line
 	5100 2350 5100 650 
 Wire Wire Line
-	8550 5500 8300 5500
-Wire Wire Line
-	8300 5500 8300 5600
+	8300 5500 8300 5550
 $Comp
 L power:VDD #PWR021
 U 1 1 5FB7DE7A
@@ -1098,26 +1072,6 @@ Wire Notes Line
 Wire Notes Line
 	650  6050 650  7750
 $Comp
-L dk_TVS-Diodes:TPD2E001DRLR D2
-U 1 1 5FC826E5
-P 5250 3150
-F 0 "D2" V 5600 3000 60  0000 L CNN
-F 1 "TPD2E001DRLR" V 5700 2750 60  0000 L CNN
-F 2 "digikey-footprints:SOT-553" H 5450 3350 60  0001 L CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e001" H 5450 3450 60  0001 L CNN
-F 4 "296-21883-1-ND" H 5450 3550 60  0001 L CNN "Digi-Key_PN"
-F 5 "TPD2E001DRLR" H 5450 3650 60  0001 L CNN "MPN"
-F 6 "Circuit Protection" H 5450 3750 60  0001 L CNN "Category"
-F 7 "TVS - Diodes" H 5450 3850 60  0001 L CNN "Family"
-F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftpd2e001" H 5450 3950 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/texas-instruments/TPD2E001DRLR/296-21883-1-ND/1629242" H 5450 4050 60  0001 L CNN "DK_Detail_Page"
-F 10 "TVS DIODE 5.5V SOT5" H 5450 4150 60  0001 L CNN "Description"
-F 11 "Texas Instruments" H 5450 4250 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5450 4350 60  0001 L CNN "Status"
-	1    5250 3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L dk_TVS-Diodes:TPD2E001DRLR D3
 U 1 1 5FC82B04
 P 6800 3150
@@ -1145,19 +1099,19 @@ Wire Wire Line
 	2750 6700 3150 6700
 Wire Wire Line
 	900  7500 3150 7500
-Text GLabel 4850 3350 0    50   Input ~ 0
+Text GLabel 5850 3050 2    50   Input ~ 0
 D+
-Text GLabel 4850 3050 0    50   Input ~ 0
+Text GLabel 5050 3050 0    50   Input ~ 0
 D-
 $Comp
 L power:GND #PWR014
 U 1 1 5FC93372
-P 5900 3650
-F 0 "#PWR014" H 5900 3400 50  0001 C CNN
-F 1 "GND" H 5905 3477 50  0000 C CNN
-F 2 "" H 5900 3650 50  0001 C CNN
-F 3 "" H 5900 3650 50  0001 C CNN
-	1    5900 3650
+P 5450 3550
+F 0 "#PWR014" H 5450 3300 50  0001 C CNN
+F 1 "GND" H 5455 3377 50  0000 C CNN
+F 2 "" H 5450 3550 50  0001 C CNN
+F 3 "" H 5450 3550 50  0001 C CNN
+	1    5450 3550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1172,17 +1126,6 @@ F 3 "" H 7450 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C10
-U 1 1 5FC981CC
-P 5900 3200
-F 0 "C10" H 6015 3246 50  0000 L CNN
-F 1 "100n" H 6015 3155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 5938 3050 50  0001 C CNN
-F 3 "~" H 5900 3200 50  0001 C CNN
-	1    5900 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C11
 U 1 1 5FC9851F
 P 7450 3200
@@ -1193,7 +1136,7 @@ F 3 "~" H 7450 3200 50  0001 C CNN
 	1    7450 3200
 	1    0    0    -1  
 $EndComp
-Text GLabel 5900 2750 2    50   Input ~ 0
+Text GLabel 5450 2750 2    50   Input ~ 0
 VUSB
 $Comp
 L power:VDD #PWR09
@@ -1207,16 +1150,7 @@ F 3 "" H 7450 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 3650 5900 3350
-Wire Wire Line
-	5900 3050 5900 2750
-Wire Wire Line
-	5450 2750 5900 2750
-Wire Wire Line
 	7000 2750 7450 2750
-Connection ~ 5900 3650
-Wire Wire Line
-	5450 3650 5900 3650
 Wire Wire Line
 	7000 3650 7450 3650
 Wire Wire Line
@@ -1350,8 +1284,6 @@ Wire Wire Line
 Wire Wire Line
 	8300 5450 8300 5500
 Connection ~ 8300 5500
-Wire Wire Line
-	8550 4950 8550 5500
 $Comp
 L Device:R_US R9
 U 1 1 5FB99AFF
@@ -1364,4 +1296,57 @@ F 4 "DNF" H 8300 5300 50  0000 C CNN "DNF"
 	1    8300 5300
 	1    0    0    -1  
 $EndComp
+$Comp
+L TC2030-CTX:TC2030-CTX J2
+U 1 1 5FC452D4
+P 4600 6900
+F 0 "J2" H 4600 7267 50  0000 C CNN
+F 1 "TC2030-CTX" H 4600 7176 50  0000 C CNN
+F 2 "libs:TC2030-IDC-NL" H 4600 6900 50  0001 C CNN
+F 3 "" H 4600 6900 50  0001 L BNN
+	1    4600 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 6800 4100 6800
+Text GLabel 5100 7100 2    50   Input ~ 0
+NRST
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 5FC6DA81
+P 8100 5300
+F 0 "JP1" V 8150 5650 50  0000 R CNN
+F 1 "Jumper_2_Open" V 8000 5950 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 8100 5300 50  0001 C CNN
+F 3 "~" H 8100 5300 50  0001 C CNN
+	1    8100 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8100 5500 8300 5500
+Wire Wire Line
+	8300 5550 8550 5550
+Connection ~ 8300 5550
+Wire Wire Line
+	8300 5550 8300 5600
+Wire Wire Line
+	8550 4950 8550 5550
+Wire Wire Line
+	8100 5100 8300 5100
+Connection ~ 8300 5100
+$Comp
+L Power_Protection:USBLC6-2SC6 U3
+U 1 1 5FD3B7E9
+P 5450 3150
+F 0 "U3" H 5450 3731 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 5450 3640 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5450 2650 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 5650 3500 50  0001 C CNN
+	1    5450 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 5850 3250 2    50   Input ~ 0
+CONN_D+
+Text GLabel 5050 3250 0    50   Input ~ 0
+CONN_D-
 $EndSCHEMATC
