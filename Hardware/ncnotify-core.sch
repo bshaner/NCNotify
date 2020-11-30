@@ -1349,4 +1349,7 @@ Text GLabel 5850 3250 2    50   Input ~ 0
 CONN_D+
 Text GLabel 5050 3250 0    50   Input ~ 0
 CONN_D-
+Text GLabel 5100 7450 2    50   Input ~ 0
+JTDI
+NoConn ~ 5100 7450
 $EndSCHEMATC
