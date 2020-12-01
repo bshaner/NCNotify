@@ -105,7 +105,7 @@ F 6 "614-SMTU1632-LF" H 2500 5100 50  0001 L CNN "Mouser Part Number"
 F 7 "https://www.mouser.co.uk/ProductDetail/Renata/SMTU1632-LF?qs=WWgnj3qycfliEHm3l%252BmM0A%3D%3D" H 2500 5000 50  0001 L CNN "Mouser Price/Stock"
 F 8 "RENATA" H 2500 4900 50  0001 L CNN "Manufacturer_Name"
 F 9 "SMTU1632-LF" H 2500 4800 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "DNF" H 1850 5400 50  0001 C CNN "LCSC Part #"
+F 10 "" H 1850 5400 50  0001 C CNN "LCSC Part #"
 	1    1850 5400
 	-1   0    0    -1  
 $EndComp
@@ -120,7 +120,7 @@ F 3 "" H 1050 1100 50  0001 L BNN
 F 4 "Compliant" H 1050 1100 50  0001 L BNN "EU_RoHS_Compliance"
 F 5 "1" H 1050 1100 50  0001 L BNN "Number_of_Positions"
 F 6 "5-1634503-1" H 1050 1100 50  0001 L BNN "Comment"
-F 7 "DNF" H 1050 1100 50  0001 C CNN "LCSC Part #"
+F 7 "" H 1050 1100 50  0001 C CNN "LCSC Part #"
 	1    1050 1100
 	1    0    0    -1  
 $EndComp
@@ -138,7 +138,7 @@ F 4 "3.26 mm" H 2050 6700 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
 F 5 "A" H 2050 6700 50  0001 L BNN "PARTREV"
 F 6 "GCT" H 2050 6700 50  0001 L BNN "MANUFACTURER"
 F 7 "Manufacturer Recommendations" H 2050 6700 50  0001 L BNN "STANDARD"
-F 8 "DNF" H 2050 6700 50  0001 C CNN "LCSC Part #"
+F 8 "" H 2050 6700 50  0001 C CNN "LCSC Part #"
 	1    2050 6700
 	1    0    0    -1  
 $EndComp
@@ -297,7 +297,7 @@ F 0 "JP2" V 2050 4450 50  0000 L CNN
 F 1 "V_USB_LOCK" V 1950 4100 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2000 4650 50  0001 C CNN
 F 3 "~" H 2000 4650 50  0001 C CNN
-F 4 "DNF" H 2000 4650 50  0001 C CNN "LCSC Part #"
+F 4 "" H 2000 4650 50  0001 C CNN "LCSC Part #"
 	1    2000 4650
 	0    -1   -1   0   
 $EndComp
@@ -309,7 +309,7 @@ F 0 "JP3" V 1954 5168 50  0000 L CNN
 F 1 "V_BATT_LOCK" V 2045 5168 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2000 5100 50  0001 C CNN
 F 3 "~" H 2000 5100 50  0001 C CNN
-F 4 "DNF" H 2000 5100 50  0001 C CNN "LCSC Part #"
+F 4 "" H 2000 5100 50  0001 C CNN "LCSC Part #"
 	1    2000 5100
 	0    1    1    0   
 $EndComp
@@ -1282,7 +1282,7 @@ F 0 "J2" H 4600 7267 50  0000 C CNN
 F 1 "TC2030-CTX" H 4600 7176 50  0000 C CNN
 F 2 "libs:TC2030-IDC-NL" H 4600 6900 50  0001 C CNN
 F 3 "" H 4600 6900 50  0001 L BNN
-F 4 "DNF" H 4600 6900 50  0001 C CNN "LCSC Part #"
+F 4 "" H 4600 6900 50  0001 C CNN "LCSC Part #"
 	1    4600 6900
 	1    0    0    -1  
 $EndComp
@@ -1298,7 +1298,7 @@ F 0 "JP1" V 8150 5650 50  0000 R CNN
 F 1 "Jumper_2_Open" V 8000 5950 50  0000 R CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 8100 5300 50  0001 C CNN
 F 3 "~" H 8100 5300 50  0001 C CNN
-F 4 "DNF" H 8100 5300 50  0001 C CNN "LCSC Part #"
+F 4 "" H 8100 5300 50  0001 C CNN "LCSC Part #"
 	1    8100 5300
 	0    -1   -1   0   
 $EndComp
