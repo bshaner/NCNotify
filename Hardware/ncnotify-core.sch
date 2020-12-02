@@ -555,13 +555,13 @@ Wire Notes Line
 	650  3750 650  2200
 Wire Notes Line
 	650  650  2550 650 
-Text GLabel 5100 6900 2    50   Input ~ 0
+Text GLabel 5100 6800 2    50   Input ~ 0
 JTMS-SWDIO
 Text GLabel 10550 3050 2    50   Input ~ 0
 JTMS-SWDIO
 Text GLabel 10550 3150 2    50   Input ~ 0
 JTCK-SWCLK
-Text GLabel 5100 6800 2    50   Input ~ 0
+Text GLabel 5100 6900 2    50   Input ~ 0
 JTCK-SWCLK
 Text GLabel 10550 3250 2    50   Input ~ 0
 JTDI
@@ -1081,11 +1081,7 @@ SPI2_SS_0
 Text Notes 6700 4100 2    50   ~ 0
 Ext. peripherals (PMOD host style)
 Wire Notes Line
-	5300 4150 6800 4150
-Wire Notes Line
-	6800 4150 6800 5600
-Wire Notes Line
-	6800 5600 5300 5600
+	7400 4150 7400 5600
 Wire Notes Line
 	5300 5600 5300 4150
 Wire Wire Line
@@ -1183,8 +1179,6 @@ Text Notes 7200 1750 2    50   ~ 0
 *Most caps here will NOT be \npopulated for low power \noperation on coin cell
 NoConn ~ 10550 3550
 NoConn ~ 10550 3650
-NoConn ~ 10550 3750
-NoConn ~ 10550 3850
 NoConn ~ 8550 4450
 NoConn ~ 8550 4250
 NoConn ~ 8550 4150
@@ -1371,4 +1365,38 @@ Wire Wire Line
 Connection ~ 2050 1250
 Text Notes 10700 7650 0    50   ~ 0
 v1.1
+Text GLabel 10550 3750 2    50   Input ~ 0
+USART3_TX
+Text GLabel 10550 3850 2    50   Input ~ 0
+USART3_RX
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5FC86710
+P 6800 5050
+F 0 "TP2" V 6754 5238 50  0000 L CNN
+F 1 "TestPoint" V 6845 5238 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7000 5050 50  0001 C CNN
+F 3 "~" H 7000 5050 50  0001 C CNN
+	1    6800 5050
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	5300 4150 7400 4150
+Wire Notes Line
+	5300 5600 7400 5600
+Text GLabel 6800 5050 0    50   Input ~ 0
+USART3_TX
+Text GLabel 6800 4750 0    50   Input ~ 0
+USART3_RX
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5FC90D8F
+P 6800 4750
+F 0 "TP1" V 6754 4938 50  0000 L CNN
+F 1 "TestPoint" V 6845 4938 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7000 4750 50  0001 C CNN
+F 3 "~" H 7000 4750 50  0001 C CNN
+	1    6800 4750
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

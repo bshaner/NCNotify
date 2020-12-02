@@ -28,3 +28,7 @@ Permanent branches will be used for alternate layout ideas, pared-down implement
 - Power from USB when available
 	- Approach here was to try using a switch to detect when USB is plugged, because protection diodes and pmosfet would cause voltage drop and reduce battery life. But it is too big. Fun to try anyway!
 - Single-sided SMD assembly
+
+## Known issues
+	v1.0
+		- SWD CLK and DIO are swapped :(
