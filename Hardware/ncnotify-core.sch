@@ -109,21 +109,6 @@ F 10 "" H 1850 5400 50  0001 C CNN "LCSC Part #"
 	1    1850 5400
 	-1   0    0    -1  
 $EndComp
-$Comp
-L 5-1634503-1:5-1634503-1 J1
-U 1 1 5FA9B29C
-P 1050 1100
-F 0 "J1" H 1108 1465 50  0000 C CNN
-F 1 "5-1634503-1" H 1108 1374 50  0000 C CNN
-F 2 "libs:TE_5-1634503-1" H 1050 1100 50  0001 L BNN
-F 3 "" H 1050 1100 50  0001 L BNN
-F 4 "Compliant" H 1050 1100 50  0001 L BNN "EU_RoHS_Compliance"
-F 5 "1" H 1050 1100 50  0001 L BNN "Number_of_Positions"
-F 6 "5-1634503-1" H 1050 1100 50  0001 L BNN "Comment"
-F 7 "" H 1050 1100 50  0001 C CNN "LCSC Part #"
-	1    1050 1100
-	1    0    0    -1  
-$EndComp
 Text Notes 750  600  0    50   ~ 0
 BNC sense connector
 $Comp
@@ -555,17 +540,17 @@ Wire Notes Line
 	650  3750 650  2200
 Wire Notes Line
 	650  650  2550 650 
-Text GLabel 5100 6800 2    50   Input ~ 0
+Text GLabel 5050 6950 2    50   Input ~ 0
 JTMS-SWDIO
 Text GLabel 10550 3050 2    50   Input ~ 0
 JTMS-SWDIO
 Text GLabel 10550 3150 2    50   Input ~ 0
 JTCK-SWCLK
-Text GLabel 5100 6900 2    50   Input ~ 0
+Text GLabel 5050 6850 2    50   Input ~ 0
 JTCK-SWCLK
 Text GLabel 10550 3250 2    50   Input ~ 0
 JTDI
-Text GLabel 5100 7000 2    50   Input ~ 0
+Text GLabel 5050 7050 2    50   Input ~ 0
 JTDO
 Text GLabel 8550 3850 0    50   Input ~ 0
 JTDO
@@ -626,27 +611,25 @@ Connection ~ 5800 7200
 $Comp
 L power:VDD #PWR026
 U 1 1 5FB3E2D3
-P 4000 6800
-F 0 "#PWR026" H 4000 6650 50  0001 C CNN
-F 1 "VDD" H 4015 6973 50  0000 C CNN
-F 2 "" H 4000 6800 50  0001 C CNN
-F 3 "" H 4000 6800 50  0001 C CNN
-	1    4000 6800
+P 4550 6350
+F 0 "#PWR026" H 4550 6200 50  0001 C CNN
+F 1 "VDD" H 4565 6523 50  0000 C CNN
+F 2 "" H 4550 6350 50  0001 C CNN
+F 3 "" H 4550 6350 50  0001 C CNN
+	1    4550 6350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR031
 U 1 1 5FB3FA87
-P 4000 7100
-F 0 "#PWR031" H 4000 6850 50  0001 C CNN
-F 1 "GND" H 4005 6927 50  0000 C CNN
-F 2 "" H 4000 7100 50  0001 C CNN
-F 3 "" H 4000 7100 50  0001 C CNN
-	1    4000 7100
+P 4550 7600
+F 0 "#PWR031" H 4550 7350 50  0001 C CNN
+F 1 "GND" H 4555 7427 50  0000 C CNN
+F 2 "" H 4550 7600 50  0001 C CNN
+F 3 "" H 4550 7600 50  0001 C CNN
+	1    4550 7600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 7100 4100 7100
 Wire Notes Line
 	3850 7750 3850 6050
 Text Notes 5150 600  0    50   ~ 0
@@ -1130,10 +1113,6 @@ F 3 "" H 6900 3550 50  0001 C CNN
 $EndComp
 Text GLabel 5450 2750 2    50   Input ~ 0
 VUSB
-Text GLabel 1350 1000 2    50   Input ~ 0
-S+
-Text GLabel 1350 1200 2    50   Input ~ 0
-S-
 Text GLabel 7300 3250 2    50   Input ~ 0
 S+
 Text GLabel 6500 3250 0    50   Input ~ 0
@@ -1268,21 +1247,7 @@ F 5 "C25794" H 8300 5300 50  0001 C CNN "LCSC Part #"
 	1    8300 5300
 	1    0    0    -1  
 $EndComp
-$Comp
-L TC2030-CTX:TC2030-CTX J2
-U 1 1 5FC452D4
-P 4600 6900
-F 0 "J2" H 4600 7267 50  0000 C CNN
-F 1 "TC2030-CTX" H 4600 7176 50  0000 C CNN
-F 2 "libs:TC2030-IDC-NL" H 4600 6900 50  0001 C CNN
-F 3 "" H 4600 6900 50  0001 L BNN
-F 4 "" H 4600 6900 50  0001 C CNN "LCSC Part #"
-	1    4600 6900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 6800 4100 6800
-Text GLabel 5100 7100 2    50   Input ~ 0
+Text GLabel 5050 6650 2    50   Input ~ 0
 NRST
 $Comp
 L Jumper:Jumper_2_Open JP1
@@ -1324,9 +1289,8 @@ Text GLabel 5850 3250 2    50   Input ~ 0
 CONN_D+
 Text GLabel 5050 3250 0    50   Input ~ 0
 CONN_D-
-Text GLabel 5100 7450 2    50   Input ~ 0
+Text GLabel 5050 7150 2    50   Input ~ 0
 JTDI
-NoConn ~ 5100 7450
 $Comp
 L power:VDD #PWR09
 U 1 1 5FC99115
@@ -1398,5 +1362,39 @@ F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7000 4750 50  0001 C CNN
 F 3 "~" H 7000 4750 50  0001 C CNN
 	1    6800 4750
 	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J2
+U 1 1 5FCB1000
+P 4550 6950
+F 0 "J2" V 3950 7000 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" V 4050 7350 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 4550 6950 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 4200 5700 50  0001 C CNN
+	1    4550 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 7550 4550 7550
+Wire Wire Line
+	4550 7600 4550 7550
+Connection ~ 4550 7550
+Text GLabel 1350 1250 2    50   Input ~ 0
+S-
+Text GLabel 1350 1050 2    50   Input ~ 0
+S+
+$Comp
+L BNC5-J-P-GN-RA-BH2D:BNC5-J-P-GN-RA-BH2D J1
+U 1 1 5FD45A24
+P 950 1150
+F 0 "J1" H 843 783 50  0000 C CNN
+F 1 "BNC5-J-P-GN-RA-BH2D" H 700 900 50  0000 C CNN
+F 2 "SAMTEC_BNC5-J-P-GN-RA-BH2D" H 950 1150 50  0001 L BNN
+F 3 "" H 950 1150 50  0001 L BNN
+F 4 "SAMTEC" H 950 1150 50  0001 L BNN "MANUFACTURER"
+F 5 "C" H 950 1150 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer recommendations" H 950 1150 50  0001 L BNN "STANDARD"
+	1    950  1150
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

@@ -8,4 +8,5 @@
   (lib (name USB4110-GF-A)(type Legacy)(uri ${KIPRJMOD}/libs/USB4110-GF-A.lib)(options "")(descr ""))
   (lib (name SamacSys_Parts)(type Legacy)(uri ${KIPRJMOD}/libs/SamacSys_Parts.lib)(options "")(descr ""))
   (lib (name TC2030-CTX)(type Legacy)(uri ${KIPRJMOD}/libs/TC2030-CTX.lib)(options "")(descr ""))
+  (lib (name BNC5-J-P-GN-RA-BH2D)(type Legacy)(uri ${KIPRJMOD}/libs/BNC5-J-P-GN-RA-BH2D.lib)(options "")(descr ""))
 )
