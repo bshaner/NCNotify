@@ -9,7 +9,6 @@ A nurse call BNC data logger, designed to work with any normally-open BNC nurse 
 Permanent branches will be used for alternate layout ideas, pared-down implementations, or implementations with extra peripherals. Parens are used for branches I plan to start, but haven't jumped into:
 
 * main: core development branch, on track for fab and assemble runs. Includes development headers, jumpers, no peripherals
-* compact: idea for a denser board, basis for case designs
 * (bluetooth: bluetooth peripheral incl. Easy to integrate, but requires tighter power management (2 mcu). I'm interested in trying an all-nordic board down the road as a complete redesign, maybe with a wall-wart base station BT->Wi-Fi/Ethernet bridge)
 	
 ## Principle of operation:
