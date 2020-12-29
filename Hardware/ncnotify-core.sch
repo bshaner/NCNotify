@@ -93,109 +93,27 @@ Text Notes 3450 600  2    50   ~ 0
 Ext. crystal (LSE)
 Text Notes 750  600  0    50   ~ 0
 BNC sense connector
-$Comp
-L USB4110-GF-A:USB4110-GF-A J3
-U 1 1 5FA9CA6A
-P 2050 6700
-F 0 "J3" H 2050 7267 50  0000 C CNN
-F 1 "USB4110-GF-A" H 2050 7176 50  0000 C CNN
-F 2 "libs:GCT_USB4110-GF-A" H 2050 6700 50  0001 L BNN
-F 3 "" H 2050 6700 50  0001 L BNN
-F 4 "3.26 mm" H 2050 6700 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-F 5 "A" H 2050 6700 50  0001 L BNN "PARTREV"
-F 6 "GCT" H 2050 6700 50  0001 L BNN "MANUFACTURER"
-F 7 "Manufacturer Recommendations" H 2050 6700 50  0001 L BNN "STANDARD"
-F 8 "" H 2050 6700 50  0001 C CNN "LCSC Part #"
-	1    2050 6700
-	1    0    0    -1  
-$EndComp
-Text GLabel 900  7150 0    50   Input ~ 0
+Text GLabel 1350 6850 2    50   Input ~ 0
 CONN_D+
-Text GLabel 1050 7150 2    50   Input ~ 0
+Text GLabel 1350 6750 2    50   Input ~ 0
 CONN_D-
-Wire Wire Line
-	1350 6800 1050 6800
-Wire Wire Line
-	1050 7400 2900 7400
-Wire Wire Line
-	900  7500 900  6700
-Wire Wire Line
-	900  6700 1350 6700
-Text GLabel 2750 6400 2    50   Input ~ 0
+Text GLabel 1350 6650 2    50   Input ~ 0
 VUSB
 Wire Notes Line
 	2750 650  2750 2050
 Wire Notes Line
 	4950 650  4950 2050
-Wire Wire Line
-	1050 6800 1050 7400
-$Comp
-L Device:R_US R14
-U 1 1 5FAA6CB5
-P 3150 6600
-F 0 "R14" V 2945 6600 50  0000 C CNN
-F 1 "5k1" V 3036 6600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3190 6590 50  0001 C CNN
-F 3 "~" H 3150 6600 50  0001 C CNN
-F 4 "C25905" H 3150 6600 50  0001 C CNN "LCSC Part #"
-	1    3150 6600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R13
-U 1 1 5FAA8706
-P 1100 6600
-F 0 "R13" V 895 6600 50  0000 C CNN
-F 1 "5k1" V 986 6600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1140 6590 50  0001 C CNN
-F 3 "~" H 1100 6600 50  0001 C CNN
-F 4 "C25905" H 1100 6600 50  0001 C CNN "LCSC Part #"
-	1    1100 6600
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR028
-U 1 1 5FAA8F7D
-P 3400 6600
-F 0 "#PWR028" H 3400 6350 50  0001 C CNN
-F 1 "GND" V 3405 6472 50  0000 R CNN
-F 2 "" H 3400 6600 50  0001 C CNN
-F 3 "" H 3400 6600 50  0001 C CNN
-	1    3400 6600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR027
-U 1 1 5FAA933D
-P 800 6600
-F 0 "#PWR027" H 800 6350 50  0001 C CNN
-F 1 "GND" V 805 6472 50  0000 R CNN
-F 2 "" H 800 6600 50  0001 C CNN
-F 3 "" H 800 6600 50  0001 C CNN
-	1    800  6600
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 6600 3300 6600
-Wire Wire Line
-	3000 6600 2750 6600
-Wire Wire Line
-	1350 6600 1250 6600
-Wire Wire Line
-	950  6600 800  6600
 $Comp
 L power:GND #PWR029
 U 1 1 5FAA1030
-P 2800 7100
-F 0 "#PWR029" H 2800 6850 50  0001 C CNN
-F 1 "GND" V 2805 6972 50  0000 R CNN
-F 2 "" H 2800 7100 50  0001 C CNN
-F 3 "" H 2800 7100 50  0001 C CNN
-	1    2800 7100
+P 1500 7050
+F 0 "#PWR029" H 1500 6800 50  0001 C CNN
+F 1 "GND" V 1505 6922 50  0000 R CNN
+F 2 "" H 1500 7050 50  0001 C CNN
+F 3 "" H 1500 7050 50  0001 C CNN
+	1    1500 7050
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 2750 6900
-NoConn ~ 1350 6900
 $Comp
 L Regulator_Linear:TLV71333PDBV U2
 U 1 1 5FAAD7D9
@@ -1049,8 +967,6 @@ Wire Notes Line
 	7400 4150 7400 5600
 Wire Notes Line
 	5300 5600 5300 4150
-Wire Wire Line
-	2900 6800 2750 6800
 Wire Notes Line
 	650  7750 3700 7750
 Wire Notes Line
@@ -1059,14 +975,6 @@ Wire Notes Line
 	3700 6050 3700 7750
 Wire Notes Line
 	650  6050 650  7750
-Wire Wire Line
-	3150 6700 3150 7500
-Wire Wire Line
-	2900 6800 2900 7400
-Wire Wire Line
-	2750 6700 3150 6700
-Wire Wire Line
-	900  7500 3150 7500
 Text GLabel 5850 3050 2    50   Input ~ 0
 D+
 Text GLabel 5050 3050 0    50   Input ~ 0
@@ -1185,8 +1093,6 @@ Wire Wire Line
 Wire Wire Line
 	1000 4800 1500 4800
 Connection ~ 1500 4800
-Wire Wire Line
-	2800 7100 2750 7100
 Wire Wire Line
 	900  3500 900  3450
 Wire Wire Line
@@ -1400,4 +1306,36 @@ F 11 "BATTERY HOLDER COIN 20MM SMD" H 1550 5400 50  0001 L BNN "DESCRIPTION"
 $EndComp
 Wire Wire Line
 	1050 5400 1250 5400
+Wire Wire Line
+	1350 7050 1400 7050
+NoConn ~ 1350 6950
+Connection ~ 1400 7050
+Wire Wire Line
+	1400 7050 1500 7050
+Wire Wire Line
+	950  7450 950  7500
+Wire Wire Line
+	950  7500 1400 7500
+Wire Wire Line
+	1400 7050 1400 7500
+$Comp
+L dk_USB-DVI-HDMI-Connectors:10103594-0001LF J3
+U 1 1 5FF142B1
+P 1100 6850
+F 0 "J3" H 1114 7573 50  0000 C CNN
+F 1 "10103594-0001LF" H 1114 7482 50  0000 C CNN
+F 2 "digikey-footprints:USB_Micro_B_Female_10103594-0001LF" H 1300 7050 60  0001 L CNN
+F 3 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10103594.pdf" H 1300 7150 60  0001 L CNN
+F 4 "609-4050-1-ND" H 1300 7250 60  0001 L CNN "Digi-Key_PN"
+F 5 "10103594-0001LF" H 1300 7350 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 1300 7450 60  0001 L CNN "Category"
+F 7 "USB, DVI, HDMI Connectors" H 1300 7550 60  0001 L CNN "Family"
+F 8 "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10103594.pdf" H 1300 7650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/amphenol-icc-fci/10103594-0001LF/609-4050-1-ND/2350357" H 1300 7750 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN RCPT USB2.0 MICRO B SMD R/A" H 1300 7850 60  0001 L CNN "Description"
+F 11 "Amphenol ICC (FCI)" H 1300 7950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1300 8050 60  0001 L CNN "Status"
+	1    1100 6850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

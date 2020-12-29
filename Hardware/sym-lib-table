@@ -10,4 +10,5 @@
   (lib (name TC2030-CTX)(type Legacy)(uri ${KIPRJMOD}/libs/TC2030-CTX.lib)(options "")(descr ""))
   (lib (name BNC5-J-P-GN-RA-BH2D)(type Legacy)(uri ${KIPRJMOD}/libs/BNC5-J-P-GN-RA-BH2D.lib)(options "")(descr ""))
   (lib (name BU2032SM-BT-GTR)(type Legacy)(uri ${KIPRJMOD}/libs/BU2032SM-BT-GTR.lib)(options "")(descr ""))
+  (lib (name 10103592-0001LF)(type Legacy)(uri ${KIPRJMOD}/libs/10103592-0001LF.lib)(options "")(descr ""))
 )
