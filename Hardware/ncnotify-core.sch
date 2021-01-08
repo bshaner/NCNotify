@@ -368,13 +368,13 @@ $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5FAF62B9
-P 3150 2500
-F 0 "D1" V 3189 2382 50  0000 R CNN
-F 1 "Vf ~ 2.1" V 3098 2382 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 3150 2500 50  0001 C CNN
-F 3 "~" H 3150 2500 50  0001 C CNN
-F 4 "C72038" H 3150 2500 50  0001 C CNN "LCSC Part #"
-	1    3150 2500
+P 2700 3150
+F 0 "D1" V 2739 3032 50  0000 R CNN
+F 1 "Vf ~~ 2.0 Red" V 2648 3032 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 2700 3150 50  0001 C CNN
+F 3 "~" H 2700 3150 50  0001 C CNN
+F 4 "C72038" H 2700 3150 50  0001 C CNN "LCSC Part #"
+	1    2700 3150
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -439,79 +439,31 @@ Wire Wire Line
 Wire Wire Line
 	900  2850 900  3000
 $Comp
-L nx3008nbks:NX3008NBKS Q1
-U 1 1 5FB0EC3D
-P 2650 3300
-F 0 "Q1" H 2804 3396 50  0000 L CNN
-F 1 "NX3008NBKS" H 2804 3305 50  0000 L CNN
-F 2 "digikey-footprints:SOT-363" H 2800 3350 50  0001 C CNN
-F 3 "~" H 2800 3350 50  0001 C CNN
-F 4 "C396098" H 2650 3300 50  0001 C CNN "LCSC Part #"
-	1    2650 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L nx3008nbks:NX3008NBKS Q1
-U 2 1 5FB10692
-P 3650 3300
-F 0 "Q1" H 3804 3396 50  0000 L CNN
-F 1 "NX3008NBKS" H 3804 3305 50  0000 L CNN
-F 2 "digikey-footprints:SOT-363" H 3800 3350 50  0001 C CNN
-F 3 "~" H 3800 3350 50  0001 C CNN
-F 4 "C396098" H 3650 3300 50  0001 C CNN "LCSC Part #"
-	2    3650 3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R4
 U 1 1 5FB119C6
-P 2700 2900
-F 0 "R4" H 2768 2946 50  0000 L CNN
-F 1 "15" H 2768 2855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2740 2890 50  0001 C CNN
-F 3 "~" H 2700 2900 50  0001 C CNN
-F 4 "C22810" H 2700 2900 50  0001 C CNN "LCSC Part #"
-	1    2700 2900
+P 2700 2700
+F 0 "R4" H 2768 2746 50  0000 L CNN
+F 1 "24" H 2768 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2740 2690 50  0001 C CNN
+F 3 "~" H 2700 2700 50  0001 C CNN
+F 4 "C22810" H 2700 2700 50  0001 C CNN "LCSC Part #"
+	1    2700 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_US R5
 U 1 1 5FB12049
-P 3700 2900
-F 0 "R5" H 3768 2946 50  0000 L CNN
-F 1 "68" H 3768 2855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3740 2890 50  0001 C CNN
-F 3 "~" H 3700 2900 50  0001 C CNN
-F 4 "C27592" H 3700 2900 50  0001 C CNN "LCSC Part #"
-	1    3700 2900
+P 3700 2700
+F 0 "R5" H 3768 2746 50  0000 L CNN
+F 1 "68" H 3768 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3740 2690 50  0001 C CNN
+F 3 "~" H 3700 2700 50  0001 C CNN
+F 4 "C27592" H 3700 2700 50  0001 C CNN "LCSC Part #"
+	1    3700 2700
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR013
-U 1 1 5FB1AEDD
-P 3700 3450
-F 0 "#PWR013" H 3700 3200 50  0001 C CNN
-F 1 "GND" H 3705 3277 50  0000 C CNN
-F 2 "" H 3700 3450 50  0001 C CNN
-F 3 "" H 3700 3450 50  0001 C CNN
-	1    3700 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR012
-U 1 1 5FB1B4F3
-P 2700 3450
-F 0 "#PWR012" H 2700 3200 50  0001 C CNN
-F 1 "GND" H 2705 3277 50  0000 C CNN
-F 2 "" H 2700 3450 50  0001 C CNN
-F 3 "" H 2700 3450 50  0001 C CNN
-	1    2700 3450
-	1    0    0    -1  
-$EndComp
-Text GLabel 3400 3100 0    50   Input ~ 0
-LED_HI_V
-Wire Wire Line
-	3400 3100 3400 3250
+Text GLabel 3700 3450 0    50   Input ~ 0
+LED_BATT_GRN
 Wire Notes Line
 	650  2200 4400 2200
 Wire Notes Line
@@ -656,8 +608,8 @@ Wire Wire Line
 Wire Wire Line
 	10700 1650 10700 1550
 Connection ~ 10700 1550
-Text GLabel 2400 3250 0    50   Input ~ 0
-LED_LOW_V
+Text GLabel 2700 3450 0    50   Input ~ 0
+LED_BATT_YEL
 $Comp
 L STM32L422CBT6:STM32L422CBT6 U1
 U 1 1 5FBA57FB
@@ -686,8 +638,6 @@ Text GLabel 1950 1250 0    50   Input ~ 0
 SENSE_IN
 Text GLabel 8550 3100 0    50   Input ~ 0
 STATUS_READ
-Text GLabel 8550 3000 0    50   Input ~ 0
-LED_HI_V
 Text GLabel 10550 1850 2    50   Input ~ 0
 VBUS
 Text GLabel 3200 5400 2    50   Input ~ 0
@@ -786,21 +736,12 @@ Wire Notes Line
 	5150 5600 5150 4150
 Wire Notes Line
 	5150 4150 4300 4150
-Text Notes 2600 2700 0    50   ~ 0
+Text Notes 2600 2500 0    50   ~ 0
 V<=2.5
-Text Notes 3650 2700 0    50   ~ 0
+Text Notes 3650 2500 0    50   ~ 0
 V>2.5
 Text GLabel 3150 2300 0    50   Input ~ 0
 VBAT
-Wire Wire Line
-	2700 2750 3150 2750
-Wire Wire Line
-	3150 2650 3150 2750
-Connection ~ 3150 2750
-Wire Wire Line
-	3150 2750 3700 2750
-Wire Wire Line
-	3150 2300 3150 2350
 Text Notes 3250 2400 0    50   ~ 0
 VBAT bc VBUS->VDD could \nburn out LED at low VBAT
 Text Notes 4700 2450 0    50   ~ 0
@@ -973,8 +914,6 @@ Wire Wire Line
 Connection ~ 7450 1000
 Text GLabel 7450 850  0    50   Input ~ 0
 VDDA
-Text GLabel 8550 2900 0    50   Input ~ 0
-LED_LOW_V
 Text GLabel 2000 1050 0    50   Input ~ 0
 SENSE_OUT
 Wire Notes Line
@@ -1029,19 +968,17 @@ Text GLabel 10550 4250 2    50   Input ~ 0
 SPI2_MOSI
 Text GLabel 10550 3950 2    50   Input ~ 0
 SPI2_SS_0
-Text GLabel 5800 5100 3    50   Input ~ 0
+Text GLabel 5850 5450 0    50   Input ~ 0
 I2C1_SCL
-Text GLabel 5700 5100 3    50   Input ~ 0
+Text GLabel 5850 5250 0    50   Input ~ 0
 I2C1_SDA
-NoConn ~ 5900 5100
-NoConn ~ 6000 5100
-Text GLabel 5700 4700 1    50   Input ~ 0
+Text GLabel 5850 5000 0    50   Input ~ 0
 SPI2_SCK
-Text GLabel 5800 4700 1    50   Input ~ 0
+Text GLabel 5850 4750 0    50   Input ~ 0
 SPI2_MISO
-Text GLabel 5900 4700 1    50   Input ~ 0
+Text GLabel 5850 4500 0    50   Input ~ 0
 SPI2_MOSI
-Text GLabel 6000 4700 1    50   Input ~ 0
+Text GLabel 5850 4300 0    50   Input ~ 0
 SPI2_SS_0
 Text Notes 6700 4100 2    50   ~ 0
 Ext. peripherals (PMOD host style)
@@ -1139,7 +1076,6 @@ pin 24
 Text Notes 7200 1750 2    50   ~ 0
 *Most caps here will NOT be \npopulated for low power \noperation on coin cell
 NoConn ~ 10550 3550
-NoConn ~ 10550 3650
 NoConn ~ 8550 4450
 NoConn ~ 8550 4250
 NoConn ~ 8550 4150
@@ -1205,12 +1141,6 @@ Wire Notes Line
 	7750 650  5100 650 
 Wire Wire Line
 	2000 4350 3350 4350
-NoConn ~ 5700 4700
-NoConn ~ 5800 4700
-NoConn ~ 5900 4700
-NoConn ~ 6000 4700
-NoConn ~ 5800 5100
-NoConn ~ 5700 5100
 Wire Wire Line
 	8300 5100 8300 5150
 Wire Wire Line
@@ -1318,32 +1248,32 @@ USART3_RX
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5FC86710
-P 6800 5050
-F 0 "TP2" V 6754 5238 50  0000 L CNN
-F 1 "TestPoint" V 6845 5238 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7000 5050 50  0001 C CNN
-F 3 "~" H 7000 5050 50  0001 C CNN
-	1    6800 5050
-	0    1    1    0   
+P 7050 4950
+F 0 "TP2" V 7004 5138 50  0000 L CNN
+F 1 "TestPoint" V 7095 5138 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7250 4950 50  0001 C CNN
+F 3 "~" H 7250 4950 50  0001 C CNN
+	1    7050 4950
+	1    0    0    -1  
 $EndComp
 Wire Notes Line
 	5300 4150 7400 4150
 Wire Notes Line
 	5300 5600 7400 5600
-Text GLabel 6800 5050 0    50   Input ~ 0
+Text GLabel 7050 4950 3    50   Input ~ 0
 USART3_TX
-Text GLabel 6800 4750 0    50   Input ~ 0
+Text GLabel 6850 4950 3    50   Input ~ 0
 USART3_RX
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5FC90D8F
-P 6800 4750
-F 0 "TP1" V 6754 4938 50  0000 L CNN
-F 1 "TestPoint" V 6845 4938 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7000 4750 50  0001 C CNN
-F 3 "~" H 7000 4750 50  0001 C CNN
-	1    6800 4750
-	0    1    1    0   
+P 6850 4950
+F 0 "TP1" V 6804 5138 50  0000 L CNN
+F 1 "TestPoint" V 6895 5138 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7050 4950 50  0001 C CNN
+F 3 "~" H 7050 4950 50  0001 C CNN
+	1    6850 4950
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J2
@@ -1400,4 +1330,116 @@ F 11 "BATTERY HOLDER COIN 20MM SMD" H 1550 5400 50  0001 L BNN "DESCRIPTION"
 $EndComp
 Wire Wire Line
 	1050 5400 1250 5400
+Wire Wire Line
+	3150 2550 3700 2550
+Connection ~ 3150 2550
+Wire Wire Line
+	2700 2550 3150 2550
+Wire Wire Line
+	3150 2300 3150 2550
+$Comp
+L Device:LED D2
+U 1 1 5FF9085E
+P 3700 3150
+F 0 "D2" V 3739 3032 50  0000 R CNN
+F 1 "Vf ~~ 2.1 Green" V 3648 3032 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 3700 3150 50  0001 C CNN
+F 3 "~" H 3700 3150 50  0001 C CNN
+F 4 "C72038" H 3700 3150 50  0001 C CNN "LCSC Part #"
+	1    3700 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 2850 2700 3000
+Wire Wire Line
+	2700 3300 2700 3450
+Wire Wire Line
+	3700 3450 3700 3300
+Wire Wire Line
+	3700 3000 3700 2850
+Text GLabel 8550 3000 0    50   Input ~ 0
+LED_BATT_GRN
+Text GLabel 8550 2900 0    50   Input ~ 0
+LED_BATT_YEL
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5FFA650F
+P 5850 4300
+F 0 "TP3" V 5804 4488 50  0000 L CNN
+F 1 "TestPoint" V 5895 4488 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6050 4300 50  0001 C CNN
+F 3 "~" H 6050 4300 50  0001 C CNN
+	1    5850 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5FFA6881
+P 5850 4750
+F 0 "TP5" V 5804 4938 50  0000 L CNN
+F 1 "TestPoint" V 5895 4938 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6050 4750 50  0001 C CNN
+F 3 "~" H 6050 4750 50  0001 C CNN
+	1    5850 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5FFA6BF3
+P 5850 4500
+F 0 "TP4" V 5804 4688 50  0000 L CNN
+F 1 "TestPoint" V 5895 4688 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6050 4500 50  0001 C CNN
+F 3 "~" H 6050 4500 50  0001 C CNN
+	1    5850 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5FFA6E24
+P 5850 5000
+F 0 "TP6" V 5804 5188 50  0000 L CNN
+F 1 "TestPoint" V 5895 5188 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6050 5000 50  0001 C CNN
+F 3 "~" H 6050 5000 50  0001 C CNN
+	1    5850 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5FFAB061
+P 5850 5250
+F 0 "TP7" V 5804 5438 50  0000 L CNN
+F 1 "TestPoint" V 5895 5438 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6050 5250 50  0001 C CNN
+F 3 "~" H 6050 5250 50  0001 C CNN
+	1    5850 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5FFAB259
+P 5850 5450
+F 0 "TP8" V 5804 5638 50  0000 L CNN
+F 1 "TestPoint" V 5895 5638 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6050 5450 50  0001 C CNN
+F 3 "~" H 6050 5450 50  0001 C CNN
+	1    5850 5450
+	0    1    1    0   
+$EndComp
+Text GLabel 10550 3650 2    50   Input ~ 0
+SPI2_SS_1
+Text GLabel 6850 4300 0    50   Input ~ 0
+SPI2_SS_1
+$Comp
+L Connector:TestPoint TP9
+U 1 1 6004A8A2
+P 6850 4300
+F 0 "TP9" V 6804 4488 50  0000 L CNN
+F 1 "TestPoint" V 6895 4488 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7050 4300 50  0001 C CNN
+F 3 "~" H 7050 4300 50  0001 C CNN
+	1    6850 4300
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
